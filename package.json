@@ -8,5 +8,10 @@
     "build": ""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.3.4",
+    "connect-livereload": "^0.5.2",
+    "serve-static": "^1.8.0"
+  }
 }

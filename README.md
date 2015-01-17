@@ -1,12 +1,15 @@
-# Bidouilles avec js_of_ocaml
+# Boilerplate to test js_of_ocaml in a browser with a Js build stack
 
-Juste pour tester un peu.
+`node build.js` or `npm run build` :
 
-## Dépendances 
+- convert `test.ml` to 
+- launch a local server on 8080 port, serving the `src/` directory.
 
-Vous devez avoir ocaml et js_of_ocaml installé sur votre machine.
+## Dependencies 
 
-Sur Mac, par homebrew : 
+You must have OCaml and Js_of_ocaml installed (use of OPAM is recommended)
+
+On OSX, with homebrew : 
 
 ```
 brew install ocaml
