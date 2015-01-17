@@ -2,7 +2,7 @@
 
 `node build.js` or `npm run build` :
 
-- convert `test.ml` to 
+- convert `test.ml` to `src/js/test.js`
 - launch a local server on 8080 port, serving the `src/` directory.
 
 ## Dependencies 
@@ -17,11 +17,5 @@ brew install ocaml
 
 ```
 brew install opam
-```
-
-## Usage
-
-```
-npm run build
 ```
 
