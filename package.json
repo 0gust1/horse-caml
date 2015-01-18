@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build-ocaml": "node build.js",
+    "build-css": "cat src/css/*.css > build/css/bundle.css",
+    "watch-css": "catw src/css/*.css  -o build/css/bundle.css -v",
+    "build-js": "browserify src/js/main.js | uglifyjs -mc > build/js/bundle.js",
+    "local-server": "node localServer.js",
+    "start": "npm run build-ocaml && npm run local-server"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +18,8 @@
     "connect": "^3.3.4",
     "connect-livereload": "^0.5.2",
     "serve-static": "^1.8.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10"
   }
 }

@@ -1,1 +1,1 @@
-
+var test = require("./test");
